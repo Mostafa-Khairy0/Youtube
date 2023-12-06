@@ -201,22 +201,5 @@
     box-shadow: var(--shadow);
     border-radius: 5px;
     cursor: pointer;
-    z-index: 89;
-}
-.dims{
-    position: absolute;
-    background-image: linear-gradient(135deg,rgba(80, 80, 80, 0.7),rgb(20, 20, 20,.5));
-    color: aliceblue;
-    top: 5px;
-    right: 5px;
-    font-size: 15px;
-    height: 35px;
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: var(--shadow);
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 90;
+    z-index: 7890;
 }

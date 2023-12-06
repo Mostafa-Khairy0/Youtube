@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import styles from "./style.module.css";
 
-const InputFile = ({ type, file, name, width, height }) => {
+const InputFile = ({ type, file, name }) => {
   const inputRef = useRef("");
   const fileRef = useRef("");
   return (
@@ -16,9 +16,6 @@ const InputFile = ({ type, file, name, width, height }) => {
       >
         <span className="material-symbols-rounded">cloud_upload</span>
       </div>
-      {
-        width*height>0 && <div className={styles.dims}>{`${width}x${height}`}</div>
-      }
       {type == "image" ? (
         <img src={`${file}`} alt={type} ref={fileRef} />
       ) : type == "video" ? (

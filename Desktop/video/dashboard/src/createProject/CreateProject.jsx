@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.css";
+import createProject from "../api/projects/createProject";
 import { uploadFile } from "../api/drive";
 import { useDispatch, useSelector } from "react-redux";
 import { FileInput } from "./FileInput";
@@ -36,9 +37,9 @@ const CreateProject = () => {
 
     socket.onclose = async (event) => {
       console.log("WebSocket connection closed:", event);
-      if (part < 9) {
+      if (part < 7) {
         await openWebSocket({ part, message });
-      } else if (part == 9) {
+      } else if (part == 7) {
         dispatch(setIsLoad(false));
         toast("تم الانتهاء بنجاح", { type: "success", autoClose: 1000 * 60 });
       }
