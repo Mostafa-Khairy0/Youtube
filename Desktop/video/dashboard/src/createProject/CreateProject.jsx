@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import styles from "./style.module.css";
-import createProject from "../api/projects/createProject";
 import { uploadFile } from "../api/drive";
 import { useDispatch, useSelector } from "react-redux";
 import { FileInput } from "./FileInput";

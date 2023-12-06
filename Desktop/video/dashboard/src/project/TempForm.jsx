@@ -1,12 +1,10 @@
 import { useRef, useState, Fragment } from "react";
 import styles from "./style.module.css";
 import InputFile from "./InputFile";
-import { useDispatch } from "react-redux";
 import updateTemplate from "../api/projects/updateTemplate";
 import { toast } from "react-toastify";
 
 const TempForm = ({ id, video, parameters }) => {
-  const dispatch = useDispatch();
   const [isChanged, setIsChaned] = useState(false);
   const submitRef = useRef("");
   const videoRef = useRef("");
