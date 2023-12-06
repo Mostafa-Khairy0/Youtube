@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "label":"المستخدمون",
+            "value":"users",
+            "icon":"manage_accounts"            
+        },
+        {
+            "label":"التصاميم",
+            "value":"projects",
+            "icon":"video_library"            
+        },
+        {
+            "label":"اضافة تصميم",
+            "value":"create-project",
+            "icon":"library_add"            
+        },
+        {
+            "label":"الاعدادات",
+            "value":"settings",
+            "icon":"settings"            
+        },
+        {
+            "label":"الخروج",
+            "icon":"logout"            
+        }
+    ]
+}

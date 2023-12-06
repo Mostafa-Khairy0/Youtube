@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form{ 
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form label{
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(90, 90, 90, 0.5);
+}
+.form input{
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    padding: 7px 10px;
+    box-shadow: var(--shadow);
+    border: .5px solid rgb(122, 122, 122);
+}
+.form input[type="submit"]{
+    background-color: var(--main);
+    color: rgb(255, 255, 255);
+    padding: 3px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.form .inputBox{
+    width: 80%;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+}
+.form .inputBox .confirm{
+    font-size: 20px;
+    font-weight: 600;
+}
+.form .inputBox input{
+    width: 30px ;
+    height: 30px;
+}
+input:focus{
+    border: .5px solid rgb(0, 150, 0);
+    outline: none;
+}
