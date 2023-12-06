@@ -1,4 +1,4 @@
-import { useEffect} from "react";
+import { useEffect } from "react";
 import styles from "./style.module.css";
 import { uploadFile } from "../api/drive";
 import { useDispatch, useSelector } from "react-redux";
